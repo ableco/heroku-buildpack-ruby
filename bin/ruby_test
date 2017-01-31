@@ -24,7 +24,7 @@ end
 build_dir, env_dir, artifact_dir = ARGV
 LanguagePack::ShellHelpers.initialize_env(env_dir)
 # point bundler wrapper to app's bundler gem
-bundler_path = "#{build_dir}/vendor/bundle/ruby/2.3.0/gems/"
+bundler_path = "#{build_dir}/vendor/bundle/ruby/2.3.3/gems/"
 bundler = LanguagePack::Helpers::BundlerWrapper.new(
   bundler_path: bundler_path,
   gemfile_path: "#{build_dir}/Gemfile"
